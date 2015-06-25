@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title ⚑⚐ I have an important message ⚐⚑
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
+        link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Roboto:300,400')
+        link(rel='stylesheet', href='index.css')
+        script.
+            if (location.hostname === '127.0.0.1') {
+                var lrScript = '<script src="//' + location.hostname + ':' +
+                               '35729/livereload.js?snipver=1"><\/script>'
+                document.write(lrScript)
+            }
+    body
+        main
+            form(hidden, data-section='form')
+                label What is your <strong>important</strong> message?
+                    textarea(required)
+                label How <strong>important</strong> is your message
+                    select(required)
+                        option(value='') ---
+                        option(value=10) 10, like for removing people citizenship.
+                        option(value=8) 8, like when you send people in Irak.
+                        option(value=7) 7, when you want to help the north.
+                        option(value=6) 6, when you invite your friend over in Brisbane to talk about thing and stuff but not about climate, lol climate.
+                        option(value=4) 4, like when you win and you want to tell everybody.
+                        option(value=3) 3, to say how you gonna spend money that don't belong to.
+                        option(value=2) 2, when you want to fuck up the earth.
+                        option(value=1) 1, just when you go in holydays.
+
+                button Get your important message
+
+                small Data from 
+                    a(href='http://www.theguardian.com/news/datablog/2015/jun/24/10-flag-announcement-brings-government-flag-count-to-all-time-high') the Guardian
+
+            section(hidden, data-section='message')
+                .flags(data-side='left')
+                .flags(data-side='right')
+                .message
+        script(src='index.js')

@@ -1,0 +1,60 @@
+*, *:before, *:after
+    box-sizing border-box
+
+body
+    margin 0
+
+body
+textarea
+select
+input
+    font-family Roboto, Arial, sans-serif
+
+.message
+form
+    width 300px
+    margin 0 auto
+
+// Form section
+textarea
+select
+    display block
+    width 100%
+    margin-top 5px
+
+textarea
+    height 150px
+    font-size 16px
+
+label
+    display block
+    margin 20px 0
+
+button
+    display block
+
+// Message section
+.message
+    position relative
+    white-space pre
+    &:after
+        content url(podium.jpg)
+
+.flags
+    position absolute
+    text-align center
+    &[data-side=left]
+        right 50%
+        margin-right 150px
+        .flag
+            transform scaleX(-1)
+    &[data-side=right]
+        left 50%
+        margin-left 150px
+
+.flag
+    display inline-block
+    width 67px
+    height 410px
+    margin 10px 30px
+    background url(flag.jpg)

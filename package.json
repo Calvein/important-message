@@ -1,0 +1,20 @@
+{
+  "name": "important-message",
+  "version": "1.0.0",
+  "description": "For when you have serious message to tell.",
+  "main": "index.html",
+  "scripts": {
+    "start": "serveur -R",
+    "build": "cd src && jade < index.jade > ../index.html && stylus < index.styl > ../index.css && cp index.js ../index.js cd -"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Calvein/important-message.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Calvein/important-message/issues"
+  },
+  "homepage": "https://calvein.github.io/important-message",
+  "author": "François Robichet <calvein>",
+  "license": "ISC"
+}
