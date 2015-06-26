@@ -31,7 +31,7 @@ function showMessage(msg, flags) {
     while (i++ < flags) addFlag(i / flags <= .5 ? 'left' : 'right')
 
     // Change the hash for sharing
-    location.hash = 'msg=' + msg + '&flags=' + flags
+    location.hash = 'msg=' + encodeURIComponent(msg) + '&flags=' + flags
 
     showSection('message')
 }

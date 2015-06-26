@@ -18,7 +18,7 @@ small {
 }
 .message,
 form {
-  width: 300px;
+  width: 285px;
   margin: 0 auto;
 }
 textarea,
@@ -41,10 +41,14 @@ button {
 }
 .message {
   position: relative;
+  min-height: 430px;
   white-space: pre;
 }
 .message:after {
   content: url("podium.jpg");
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .flags {
   position: absolute;
