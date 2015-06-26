@@ -16,6 +16,7 @@ html(lang='en')
         main
             form(hidden, data-section='form')
                 label What is your <strong>important</strong> message?
+                    small The format of your message will be kept, go nuts.
                     textarea(required)
                 label How <strong>important</strong> is your message
                     select(required)
@@ -38,4 +39,5 @@ html(lang='en')
                 .flags(data-side='left')
                 .flags(data-side='right')
                 .message
+                a(href='#').reset Make your own important message
         script(src='index.js')

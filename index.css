@@ -1,24 +1,76 @@
-/* Variables */
-/* Resets */
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
-ul,
-figure {
-  padding: 0;
+body {
   margin: 0;
 }
-/* Style */
-html,
-body {
-  height: 100%;
+body,
+textarea,
+select,
+input {
+  font-family: Roboto, Arial, sans-serif;
+}
+small {
+  display: block;
+  font-size: 12px;
+}
+.message,
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+textarea,
+select {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+}
+textarea {
+  height: 150px;
+  font-size: 16px;
+}
+label {
+  display: block;
+  margin: 20px 0;
 }
 button {
-  border: 1px solid #aaa;
-  border-radius: 2px;
-  background: #fefefe;
-  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9pbmRleC5zdHlsIiwic3JjL2FwcC9jb21wb25lbnRzL2J1dHRvbi9pbmRleC5zdHlsIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBR0E7QUFDQTtBQUFHO0FBQVU7RUFDVCxZQUFXLFdBQVg7O0FBRUo7QUFDQTtFQUNJLFNBQVEsRUFBUjtFQUNBLFFBQU8sRUFBUDs7QUFFSjtBQUNBO0FBQ0E7RUFDSSxRQUFPLEtBQVA7O0FDZko7RUFDSSxRQUFPLGVBQVA7RUFDQSxlQUFjLElBQWQ7RUFDQSxZQUFXLFFBQVg7RUFDQSxRQUFPLFFBQVAiLCJmaWxlIjoiaW5kZXguY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogVmFyaWFibGVzICovXG5AcmVxdWlyZSAnYXBwL3ZhcmlhYmxlcy5zdHlsJ1xuXG4vKiBSZXNldHMgKi9cbiosICo6YmVmb3JlLCAqOmFmdGVyXG4gICAgYm94LXNpemluZyBib3JkZXItYm94XG5cbnVsXG5maWd1cmVcbiAgICBwYWRkaW5nIDBcbiAgICBtYXJnaW4gMFxuXG4vKiBTdHlsZSAqL1xuaHRtbFxuYm9keVxuICAgIGhlaWdodCAxMDAlXG5cblxuQHJlcXVpcmUgJ2FwcC9jb21wb25lbnRzL2J1dHRvbiciLCJidXR0b25cbiAgICBib3JkZXIgMXB4IHNvbGlkICNhYWFcbiAgICBib3JkZXItcmFkaXVzIDJweFxuICAgIGJhY2tncm91bmQgI2ZlZmVmZVxuICAgIGN1cnNvciBwb2ludGVyIl19 */
+.message {
+  position: relative;
+  white-space: pre;
+}
+.message:after {
+  content: url("podium.jpg");
+}
+.flags {
+  position: absolute;
+  text-align: center;
+}
+.flags[data-side=left] {
+  right: 50%;
+  margin-right: 150px;
+}
+.flags[data-side=left] .flag {
+  transform: scaleX(-1);
+}
+.flags[data-side=right] {
+  left: 50%;
+  margin-left: 150px;
+}
+.flag {
+  display: inline-block;
+  width: 67px;
+  height: 410px;
+  margin: 10px 30px;
+  background: url("flag.jpg");
+}
+.reset {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+

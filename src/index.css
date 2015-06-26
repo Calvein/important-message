@@ -12,6 +12,10 @@ select,
 input {
   font-family: Roboto, Arial, sans-serif;
 }
+small {
+  display: block;
+  font-size: 12px;
+}
 .message,
 form {
   width: 300px;
@@ -33,6 +37,7 @@ label {
 }
 button {
   display: block;
+  margin-bottom: 20px;
 }
 .message {
   position: relative;
@@ -62,4 +67,9 @@ button {
   height: 410px;
   margin: 10px 30px;
   background: url("flag.jpg");
+}
+.reset {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }

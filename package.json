@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "serveur -R",
-    "build": "cd src && jade < index.jade > ../index.html && stylus < index.styl > ../index.css && cp index.js ../index.js cd -"
+    "build": "cd src && jade < index.jade > ../index.html && stylus < index.styl > ../index.css && cp index.js ../index.js && cd -"
   },
   "repository": {
     "type": "git",
