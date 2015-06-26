@@ -27,7 +27,11 @@ $('form').addEventListener('submit', function(e) {
 function showMessage(msg, flags) {
     $('.message').textContent = msg
 
-    var i = 0
+    var $flags = $('.flag', true)
+    var i = $flags.length
+    while (i--) $flags[i].remove()
+
+    i = 0
     while (i++ < flags) addFlag(i / flags <= .5 ? 'left' : 'right')
 
     // Change the hash for sharing
@@ -48,7 +52,7 @@ $('.reset').addEventListener('click', function(e) {
 })
 
 // jQuery
-function $(sel, parent) {
-    parent = parent || document
-    return parent.querySelector(sel)
+function $(sel, all) {
+    var method = all ? 'querySelectorAll' : 'querySelector'
+    return document[method](sel)
 }
